@@ -62,12 +62,15 @@ body {
     margin-right: 16px;
 }
 
-.card__top__left{
-  width: 112px;
-  height: 112px;
-  flex-shrink: 0;
+.card__corner{
+    width: 112px;
+    height: 112px;
+    flex-shrink: 0;
+    background: #20608B;
+}
+
+.top__left{
   border-radius: 20px 0px 100px 0px;
-  background: #20608B;
 }
 
 .bottom{
@@ -97,12 +100,8 @@ body {
   line-height: normal;
 }
 
-.card__bottom__right{
-  width: 112px;
-  height: 112px;
-  flex-shrink: 0;
+.bottom__right{
   border-radius: 100px 0px 20px 0px;
-  background: #20608B;
 }
 
 .card__face--back {
@@ -115,7 +114,6 @@ body {
     font-style: normal;
     font-weight: 700;
     line-height: 32px;
-    box-shadow: -3px 1px 189px 0px rgba(25,168,230,0.71);
 }
 
 .card__back--in{
@@ -130,15 +128,15 @@ body {
 }
 
 .card__back--comment{
-    text-align: left;
+    text-align: justify;
     padding-left: 68px;
     padding-right: 68px;
     color: #FFF;
     font-family: Montserrat;
-    font-size: 17px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 500;
-    line-height: 21px;
+    line-height: 21px; /* 111.765% */
     padding-top: 6px;
 }
 
@@ -172,6 +170,23 @@ body {
 .button-1:hover,
 .button-1:focus {
   background-color: #3598D3;
+}
+
+.background-green{
+    background: #4CBA6E;
+    box-shadow: -3px 1px 189px 0px rgba(15, 216, 84, 0.71);
+}
+
+.safetyzone-green{
+    background: #269B54;
+}
+
+.corner-green{
+    background: #217D45;
+}
+
+.category-green{
+    background: #207D45;
 }
 
 @media only screen and (max-width: 768px) {
@@ -222,5 +237,6 @@ body {
         padding-right: 42px;
         font-size: 13px;
     }
+
 
 }
