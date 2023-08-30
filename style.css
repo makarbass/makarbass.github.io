@@ -138,7 +138,7 @@ body {
     font-size: 17px;
     font-style: normal;
     font-weight: 500;
-    line-height: 21px; /* 111.765% */
+    line-height: 21px;
     padding-top: 6px;
 }
 
@@ -172,4 +172,55 @@ body {
 .button-1:hover,
 .button-1:focus {
   background-color: #3598D3;
+}
+
+@media only screen and (max-width: 768px) {
+    .scene {
+        width: 300px;
+        height: 410px;
+    }
+
+    .card__face {
+        font-size: 16px;
+    }
+
+    .card__face--in{
+        width: 227px;
+        height: 341px;
+        margin: 35px 36px;
+    }
+    
+    .card__top__left{
+        width: 83px;
+        height: 83px;
+    }
+
+    .bottom__block{
+        width: 90px;
+        height: 36px;
+    }
+
+    .bottom__text{
+        font-size: 10px;
+    }
+
+    .card__bottom__right{
+        width: 83px;
+        height: 83px;
+    }
+
+    .card__back--in{
+        padding-top: 36px;
+        padding-left: 42px;
+        padding-right: 42px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    
+    .card__back--comment{
+        padding-left: 42px;
+        padding-right: 42px;
+        font-size: 13px;
+    }
+
 }
